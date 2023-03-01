@@ -25,9 +25,13 @@ function EditTask({ task }) {
       </div>
 
       <Modal show={show} onHide={handleClose}>
-        <Modal.Title>Edit your Task</Modal.Title>
+        <Modal.Title className="p-3">Edit your Task</Modal.Title>
         <Modal.Body>
-          <input defaultValue={text} onChange={handleChange} />
+          <input
+            defaultValue={text}
+            onChange={handleChange}
+            className="col-lg-8 p-3 form-control"
+          />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
